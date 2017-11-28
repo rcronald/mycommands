@@ -1,3 +1,9 @@
 
 // To clean docker images with none use
 docker system prune
+
+// Delete all containers
+docker ps -q -a | xargs docker rm
+
+// Delete all untagged images
+docker rmi $(docker images | grep "^<none>" | awk '{print $3}')
