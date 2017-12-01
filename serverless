@@ -1,0 +1,36 @@
+Servless Framework
+
+// Install serverless framework
+npm install -g serverless
+
+// Create project indicating cloud provider and language
+serverless create --template aws-nodejs --name demo-lambda
+sls create -t aws-nodejs -n demo-lambda
+
+// To deploy a function
+sls deploy -f function-name
+
+// To deploy all functions
+sls deploy
+
+
+// To invoke remote function
+sls invoke -f function-name
+
+// To invoke local function
+sls invoke local -f function-name
+
+// To invoke local function specified event
+sls invoke local -f function-name -p event.json
+
+// To see logs
+sls logs -f function-name
+
+// To see info about project
+sls info
+
+// Add npm package
+npm init -y
+npm install --save aws-sdk
+npm install --save uuid
+
