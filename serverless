@@ -13,6 +13,9 @@ sls deploy -f function-name
 // To deploy all functions
 sls deploy
 
+// To deploy to specific aws profile
+serverless deploy --aws-profile devProfile
+
 
 // To invoke remote function
 sls invoke -f function-name
