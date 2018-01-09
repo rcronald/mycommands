@@ -16,6 +16,11 @@ sls deploy
 // To deploy to specific aws profile
 serverless deploy --aws-profile devProfile
 
+// To remove
+sls remove
+
+// To remove using aws profile
+sls remove --aws-profile cix_prod
 
 // To invoke remote function
 sls invoke -f function-name
