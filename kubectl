@@ -1,0 +1,10 @@
+kubectl apply -f directory-yaml
+kubectl delete -f directory-yaml
+
+kubectl get pods
+watch kubectl get pod,services,secrets
+
+kubectl log -f podname
+
+kubectl create secret generic prod-db-secret --from-literal=username=produser --from-literal=password=Y4nys7f11
+kubectl describe secret
