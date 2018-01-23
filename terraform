@@ -1,0 +1,4 @@
+./terraform init /Users/rcronald/Development/bitbucket/cix/destiny/destiny-azure/eva0-loans/Testing
+./terraform plan /Users/rcronald/Development/bitbucket/cix/destiny/destiny-azure/eva0-loans/Testing
+./terraform apply /Users/rcronald/Development/bitbucket/cix/destiny/destiny-azure/eva0-loans/Testing
+./terraform destroy /Users/rcronald/Development/bitbucket/cix/destiny/destiny-azure/eva0-loans/Testing
