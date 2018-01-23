@@ -1,10 +1,22 @@
+#Deploy
 kubectl apply -f directory-yaml
 kubectl delete -f directory-yaml
 
+#Get Information
 kubectl get pods
 watch kubectl get pod,services,secrets
 
+#Logs
 kubectl log -f podname
 
+#Secrets
 kubectl create secret generic prod-db-secret --from-literal=username=produser --from-literal=password=Y4nys7f11
 kubectl describe secret
+
+#Configmap
+kubectl create configmap game-config-2 --from-file=docs/user-guide/configmap/kubectl/game.properties --from-file=docs/user-guide/configmap/kubectl/ui.properties
+kubectl get configmaps game-config23 -o yaml
+
+kubectl create configmap eva0-frontend-nginx-conf --from-file=Downloads/nginx.default.conf
+kubectl get configmaps eva0-frontend-nginx-conf -o yaml
+
